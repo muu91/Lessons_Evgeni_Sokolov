@@ -1,0 +1,1499 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- BLOCK LESSON 1 ----------
+main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.d-none {
+  display: none !important;
+}
+.bl_lesson {
+  position: relative;
+  z-index: 50;
+  max-width: 887px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  .bl_lesson__content {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          position: relative;
+          height: 490px;
+          padding-top: 40px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      }
+    }
+  }
+  .btn_slide {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    position: absolute;
+    background-color: $grey;
+
+    &:hover {
+      border: 1px solid $black;
+      transition: 0.3s;
+    }
+  }
+  .btn_right {
+    top: 179px;
+    left: 136px;
+    img {
+      height: 24px;
+      width: 13px;
+      margin-left: 8px;
+    }
+  }
+  .btn_left {
+    top: 179px;
+    left: 75px;
+    img {
+      height: 24px;
+      width: 13px;
+      margin-right: 8px;
+    }
+  }
+  .btn_bottom {
+    top: 179px;
+    left: 75px;
+    img {
+      width: 24px;
+      height: 13px;
+      margin-top: 8px;
+    }
+  }
+  [data-animatee] {
+    opacity: 0;
+    transition: all 0.8s ease 1s;
+    transform: translateX(-20px);
+    // position: relative;
+    // left: -20px;
+  }
+  .swiper-slide-active {
+    [data-animatee="animatee__active"] {
+      transition: all 0.8s ease 0.3s;
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .quick_texts {
+    position: relative;
+    .hide_text {
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -10;
+    }
+  }
+  .lesson3 {
+    height: 100%;
+  }
+}
+.bl_lesson3 {
+  // ---------- LESSON 3-1 ----------
+  #lesson3_1 {
+    width: 100%;
+    height: 100%;
+    h2 {
+      margin-bottom: 57px;
+    }
+    .btn_right {
+      left: auto;
+      top: 295px;
+      right: 236px;
+    }
+    .main_img {
+      margin-top: 162px;
+      margin-left: 188px;
+      max-width: 320px;
+      width: 100%;
+      img {
+        display: block;
+      }
+    }
+  }
+  // ---------- END LESSON 3-1 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-2 ----------
+  #lesson3_2 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      width: 100%;
+
+      .boy_and_girl {
+        max-width: 240px;
+        margin: 0 auto;
+        margin-top: 133px;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 3-2 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-3 ----------
+  .main__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-height: 286px;
+    .left__content {
+      margin-left: 38px;
+      padding-top: 77px;
+      max-width: 280px;
+      width: 100%;
+      margin-right: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .boy_and_girl {
+        max-width: 147px;
+        margin-left: 9px;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+    .main_img {
+      width: 100%;
+      height: fit-content;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  #lesson3_3 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      .left__content {
+        .boy_and_girl {
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+      .main_img {
+        max-width: 215px;
+        margin-right: 93px;
+        padding-top: 10px;
+      }
+    }
+  }
+  // .swiper-slide-active
+  // ---------- END LESSON 3-3 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-4 ----------
+  .three_img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    .scroll_sheet {
+      max-width: 97px;
+      width: 100%;
+    }
+    .arrow_right {
+      max-width: 26px;
+      width: 100%;
+      margin-right: 21px;
+      margin-bottom: 16px;
+    }
+    .bambuks {
+      max-width: 100px;
+      width: 100%;
+      margin-right: 45px;
+    }
+    .hay {
+      max-width: 190px;
+      width: 100%;
+      margin-right: 12px;
+    }
+    .crist_tree {
+      max-width: 130px;
+      width: 100%;
+      margin-right: 30px;
+    }
+  }
+  #lesson3_4 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      .left__content {
+        .boy_and_girl {
+          max-width: 104px;
+          margin-left: 4px;
+        }
+      }
+      .main_img {
+        margin-top: 48px;
+        margin-right: 20px;
+        .bambuks {
+          transition-delay: 0s;
+        }
+        .arrow_right {
+          transition-delay: 0s;
+        }
+        .scroll_sheet {
+          transition-delay: 0s;
+        }
+      }
+    }
+  }
+  .swiper-slide-active#lesson3_4 {
+    .main__content {
+      .main_img {
+        .bambuks {
+          transition-delay: 2s;
+        }
+        .arrow_right {
+          transition-delay: 3s;
+        }
+        .scroll_sheet {
+          transition-delay: 4s;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 3-4 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-5 ----------
+  #lesson3_5 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      .left__content {
+        .boy_and_girl {
+          max-width: 104px;
+          margin-left: 4px;
+        }
+      }
+      .main_img {
+        margin-top: 40px;
+        margin-right: 20px;
+        .scroll_sheet {
+          transition-delay: 0s;
+        }
+        .arrow_right {
+          transition-delay: 0s;
+        }
+        .hay {
+          transition-delay: 0s;
+        }
+      }
+    }
+  }
+  .swiper-slide-active#lesson3_5 {
+    .main__content {
+      .main_img {
+        .scroll_sheet {
+          transition-delay: 4s;
+        }
+        .arrow_right {
+          transition-delay: 3s;
+        }
+        .hay {
+          transition-delay: 2s;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 3-5 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-6 ----------
+  #lesson3_6 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      .left__content {
+        .boy_and_girl {
+          max-width: 104px;
+          margin-left: 4px;
+        }
+      }
+      .main_img {
+        margin-top: 26px;
+        margin-right: 20px;
+        .scroll_sheet {
+          transition-delay: 0s;
+        }
+        .arrow_right {
+          transition-delay: 0s;
+        }
+        .crist_tree {
+          transition-delay: 0s;
+        }
+      }
+    }
+  }
+  .swiper-slide-active#lesson3_6 {
+    .main__content {
+      .main_img {
+        .scroll_sheet {
+          transition-delay: 4s;
+        }
+        .arrow_right {
+          transition-delay: 3s;
+        }
+        .crist_tree {
+          transition-delay: 2s;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 3-6 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-7 ----------
+  #lesson3_7 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      .left__content {
+        .boy_and_girl {
+          max-width: 104px;
+          margin-left: 4px;
+        }
+      }
+      .main_img {
+        margin-top: 0;
+        margin-right: 0;
+        width: 400px;
+        height: 200px;
+        position: relative;
+        .trees {
+          position: absolute;
+          left: 0;
+          top: 0;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+        .z_1_img {
+          max-width: 300px;
+          left: 50px;
+          top: 3px;
+          z-index: 1;
+        }
+        .z_2_img {
+          max-width: 350px;
+          z-index: 2;
+          left: 70px;
+          top: 3px;
+          .z_2_img_green {
+            top: 3px;
+            left: 114px;
+            position: absolute;
+            width: auto;
+            height: 128px;
+            z-index: 3;
+            transition: 0.3s;
+            path {
+              fill: #fff;
+              transition: 0.3s;
+            }
+          }
+        }
+        .z_3_img {
+          width: 373px;
+          z-index: 3;
+          left: 13px;
+          top: 3px;
+          .z_3_img_green1 {
+            top: 1px;
+            left: 3px;
+            position: absolute;
+            width: auto;
+            height: 145px;
+            z-index: 3;
+            fill: #fff;
+            transition: 0.3s;
+
+            path {
+              fill: #fff;
+              transition: 0.3s;
+            }
+          }
+          .z_3_img_green2 {
+            top: 7px;
+            left: 246px;
+            position: absolute;
+            width: auto;
+            height: 145px;
+            z-index: 3;
+            path {
+              fill: #fff;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+  .swiper-slide-active#lesson3_7 {
+    .main__content {
+      .main_img {
+        .z_2_img {
+          .z_2_img_green {
+            path {
+              fill: #6cab50;
+              transition-duration: 1s;
+              transition-delay: 6s;
+            }
+          }
+        }
+        .z_3_img {
+          .z_3_img_green1 {
+            path {
+              fill: #6cab50;
+              transition-duration: 1s;
+              transition-delay: 4s;
+            }
+          }
+          .z_3_img_green2 {
+            path {
+              fill: #6cab50;
+              transition-duration: 1s;
+              transition-delay: 5s;
+            }
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 3-7 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-8 ----------
+  #lesson3_8 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      .left__content {
+        .boy_and_girl {
+          max-width: 104px;
+          margin-left: 4px;
+        }
+      }
+      .main_img {
+        margin-top: 2px;
+        margin-right: 0;
+        max-width: 387px;
+      }
+    }
+  }
+  // ---------- END LESSON 3-8 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-9 ----------
+  #lesson3_9 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      .left__content {
+        .boy_and_girl {
+          max-width: 134px;
+          margin-left: 4px;
+        }
+      }
+      .main_img {
+        margin-top: 2px;
+        margin-right: 0;
+        max-width: 387px;
+      }
+    }
+  }
+  // ---------- END LESSON 3-9 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-10 ----------
+  #lesson3_10 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      .left__content {
+        .boy_and_girl {
+          max-width: 148px;
+          margin-left: 13px;
+        }
+      }
+      .main_img {
+        margin-top: 6px;
+        margin-right: 84px;
+        max-width: 239px;
+        height: fit-content;
+      }
+    }
+  }
+  .img_rotate {
+    display: block;
+    animation-name: papersRotate;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+  }
+  @keyframes papersRotate {
+    0% {
+      transform: rotate(0deg);
+      transition: 0.3s;
+    }
+    100% {
+      transform: rotate(360deg);
+      transition: 0.3s;
+    }
+  }
+  // ---------- END LESSON 3-10 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-11 ----------
+  #lesson3_11 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      .left__content {
+        .boy_and_girl {
+          max-width: 148px;
+          margin-left: 13px;
+        }
+      }
+      .main_img {
+        margin-top: 6px;
+        margin-right: 84px;
+        max-width: 239px;
+        height: fit-content;
+      }
+    }
+  }
+  // ---------- END LESSON 3-11 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-12 ----------
+  .img_delete {
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 5px;
+      background-color: red;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: left top;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-delay: 1s;
+    }
+    @keyframes delete1 {
+      0% {
+        width: 0%;
+        transition: 0.3s;
+      }
+      25%,
+      50%,
+      100% {
+        width: 135%;
+        transition: 0.3s;
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 5px;
+      background-color: red;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: auto;
+      transform: rotate(-45deg);
+      transform-origin: right top;
+      // animation-name: delete2;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-delay: 1s;
+    }
+    @keyframes delete2 {
+      0%,
+      25% {
+        width: 0%;
+      }
+
+      50%,
+      100% {
+        width: 135%;
+      }
+    }
+  }
+  #lesson3_12 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      max-height: 295px;
+      .left__content {
+        .boy_and_girl {
+          max-width: 148px;
+          margin-left: 72px;
+        }
+      }
+      .main_img {
+        margin-top: 12px;
+        margin-right: 86px;
+        max-width: 220px;
+        height: fit-content;
+      }
+    }
+  }
+  .swiper-slide-active#lesson3_12 {
+    .main__content {
+      .main_img {
+        .img_delete {
+          &::before {
+            animation-name: delete1;
+          }
+          &::after {
+            animation-name: delete2;
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 3-12 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-13 ----------
+  #lesson3_13 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      width: 100%;
+
+      .boy_and_girl {
+        max-width: 240px;
+        margin: 0 auto;
+        margin-top: 133px;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 3-13 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-14 ----------
+  #lesson3_14 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      max-height: 295px;
+      .left__content {
+        .boy_and_girl {
+          max-width: 109px;
+          margin-left: 0px;
+        }
+      }
+      .main_img {
+        margin-top: 0;
+        margin-right: 0;
+        max-width: none;
+        height: fit-content;
+        display: flex;
+        justify-content: flex-end;
+        .img_pharaon {
+          position: relative;
+          margin-right: 40px;
+          margin-top: 7px;
+          .pharaon {
+            width: 387px;
+            display: block;
+            position: relative;
+            z-index: 5;
+          }
+          .pyramid {
+            position: absolute;
+            left: 26px;
+            top: 58px;
+            display: block;
+            width: 187px;
+            z-index: 1;
+            transform: scale(1);
+            transform-origin: bottom left;
+            transition-duration: 3s;
+          }
+        }
+      }
+    }
+  }
+  .swiper-slide-active#lesson3_14 {
+    .main__content {
+      .main_img {
+        .img_pharaon {
+          .pyramid {
+            transform: scale(1.5);
+            transition-duration: 3s;
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 3-14 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-15 ----------
+  #lesson3_15 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      max-height: 295px;
+      .left__content {
+        .boy_and_girl {
+          max-width: 166px;
+          margin-left: 0px;
+        }
+      }
+      .main_img {
+        margin-top: 0;
+        margin-right: 0;
+        max-width: none;
+        height: fit-content;
+        display: flex;
+        justify-content: flex-end;
+        .img_powders {
+          position: relative;
+          width: 380px;
+          height: 185px;
+          img {
+            display: block;
+            position: absolute;
+          }
+          h4 {
+            position: absolute;
+            z-index: 5;
+            color: $black;
+            font-family: $CC;
+            display: block;
+            font-size: 22px;
+            line-height: 1.2;
+            font-weight: 400;
+            letter-spacing: -0.68px;
+            text-align: center;
+          }
+          .soda {
+            position: absolute;
+            width: 106px;
+            height: 60px;
+            left: 115px;
+            top: 37px;
+            animation-name: transSoda;
+            animation-duration: 14s;
+            animation-iteration-count: infinite;
+            animation-delay: 0;
+            h4 {
+              top: -33px;
+              left: 26px;
+              animation-name: transSodah4;
+              animation-duration: 14s;
+              animation-iteration-count: infinite;
+              animation-delay: 0;
+            }
+            @keyframes transSodah4 {
+              0% {
+                transform: translate(0, 0);
+              }
+              15% {
+                transform: translate(53px, 16px);
+              }
+              30% {
+                transform: translate(53px, 16px);
+              }
+              45% {
+                transform: translate(-62px, 16px);
+              }
+              60% {
+                transform: translate(-62px, 16px);
+              }
+              75%,
+              100% {
+                transform: translate(0, 0);
+              }
+            }
+          }
+          @keyframes transSoda {
+            0% {
+              transform: translate(0, 0);
+            }
+            15% {
+              transform: translate(66px, 66px);
+            }
+            30% {
+              transform: translate(66px, 66px);
+            }
+            45% {
+              transform: translate(-67px, 89px);
+            }
+            60% {
+              transform: translate(-67px, 89px);
+            }
+            75%,
+            100% {
+              transform: translate(0, 0);
+            }
+          }
+          .sand {
+            position: absolute;
+            width: 106px;
+            height: 60px;
+            left: 47px;
+            top: 125px;
+            animation-name: transSand;
+            animation-duration: 14s;
+            animation-iteration-count: infinite;
+            animation-delay: 0;
+            h4 {
+              top: -15px;
+              left: -33px;
+              animation-name: transSandh4;
+              animation-duration: 14s;
+              animation-iteration-count: infinite;
+              animation-delay: 0;
+            }
+            @keyframes transSandh4 {
+              0% {
+                transform: translate(0, 0);
+              }
+              15% {
+                transform: translate(58px, -17px);
+              }
+              30% {
+                transform: translate(58px, -17px);
+              }
+              45% {
+                transform: translate(120px, -3px);
+              }
+              60% {
+                transform: translate(120px, -3px);
+              }
+              75%,
+              100% {
+                transform: translate(0, 0);
+              }
+            }
+          }
+          @keyframes transSand {
+            0% {
+              transform: translate(0, 0);
+            }
+            15% {
+              transform: translate(69px, -89px);
+            }
+            30% {
+              transform: translate(69px, -89px);
+            }
+            45% {
+              transform: translate(128px, -22px);
+            }
+            60% {
+              transform: translate(128px, -22px);
+            }
+            75%,
+            100% {
+              transform: translate(0, 0);
+            }
+          }
+          .limestone {
+            position: absolute;
+            width: 106px;
+            height: 60px;
+            right: 98px;
+            top: 105px;
+            animation-name: transLimestone;
+            animation-duration: 14s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            h4 {
+              top: -18px;
+              left: 85px;
+              animation-name: transLimestoneh4;
+              animation-duration: 14s;
+              animation-iteration-count: infinite;
+              animation-delay: 0;
+            }
+            @keyframes transLimestoneh4 {
+              0% {
+                transform: translate(0, 0);
+              }
+              15% {
+                transform: translate(-176px, 0px);
+              }
+              30% {
+                transform: translate(-176px, 0px);
+              }
+              45% {
+                transform: translate(-90px, -16px);
+              }
+              60% {
+                transform: translate(-90px, -16px);
+              }
+              75%,
+              100% {
+                transform: translate(0, 0);
+              }
+            }
+          }
+          @keyframes transLimestone {
+            0% {
+              transform: translate(0, 0);
+            }
+            15% {
+              transform: translate(-128px, 22px);
+            }
+            30% {
+              transform: translate(-128px, 22px);
+            }
+            45% {
+              transform: translate(-60px, -67px);
+            }
+            60% {
+              transform: translate(-60px, -67px);
+            }
+            75%,
+            100% {
+              transform: translate(0, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 3-15 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-16 ----------
+  #lesson3_16 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      max-height: 295px;
+      .left__content {
+        .boy_and_girl {
+          max-width: 109px;
+          margin-left: 0px;
+        }
+      }
+      .main_img {
+        margin-top: 28px;
+        margin-right: 135px;
+        max-width: none;
+        height: fit-content;
+        width: 123px;
+      }
+    }
+  }
+  // ---------- END LESSON 3-16 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-19 ----------
+  .grey_block__items {
+    display: grid;
+    grid-template-columns: repeat(3, 141px);
+    gap: 18px;
+    // max-width: 485px;
+    width: fit-content;
+    margin-right: 27px;
+    .grey_block__item {
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      height: 146px;
+      padding-left: 30px;
+      padding-right: 0px;
+      padding-top: 6px;
+      .grey_block__number {
+        color: $black;
+        font-family: $CC;
+        display: block;
+        font-size: 36px;
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: -0.68px;
+        margin-bottom: 4px;
+      }
+      p {
+        font-family: $PR;
+      }
+      &:first-child {
+        background-image: url("../img/lesson3/19bg_grey1.png");
+      }
+      &:nth-child(2) {
+        background-image: url("../img/lesson3/19bg_grey2.png");
+      }
+      &:nth-child(3) {
+        background-image: url("../img/lesson3/19bg_grey3.png");
+      }
+    }
+  }
+  #lesson3_19 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .btn_right19 {
+      z-index: 50;
+      top: 158px;
+    }
+    .main__content {
+      max-height: 295px;
+      .left__content {
+        max-width: 170px;
+        .boy_and_girl {
+          max-width: 109px;
+          margin-left: 30px;
+        }
+      }
+      .main_img {
+        margin-top: -5px;
+        margin-right: 0;
+        max-width: none;
+        height: fit-content;
+        display: flex;
+        justify-content: flex-end;
+        .grey_block__items {
+          .grey_block__item {
+            transition-delay: 0s;
+          }
+          [data-animatee] {
+            opacity: 0;
+            transition: all 0.8s ease 0.3s;
+            transform: translateX(-20px);
+            // position: relative;
+            // left: -20px;
+          }
+        }
+      }
+    }
+  }
+  .swiper-slide-active#lesson3_19 {
+    .main__content {
+      .main_img {
+        .grey_block__items {
+          .grey_block__item {
+            transition-delay: 1s;
+          }
+          [data-animatee="animatee__active"] {
+            transition: all 0.8s ease 0.3s;
+            opacity: 1;
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 3-19 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-20 ----------
+  #lesson3_20 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      .left__content {
+        .boy_and_girl {
+          max-width: 105px;
+          margin-left: 4px;
+        }
+      }
+      .main_img {
+        margin-top: 6px;
+        margin-right: 84px;
+        max-width: 239px;
+        height: fit-content;
+      }
+    }
+  }
+  // ---------- END LESSON 3-20 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-21 ----------
+  #lesson3_21 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      max-height: 244px;
+      .left__content {
+        padding-top: 35px;
+        .boy_and_girl {
+          max-width: 105px;
+          margin-left: 4px;
+        }
+      }
+      .main_img {
+        margin-top: -20px;
+        margin-right: 84px;
+        max-width: 239px;
+        height: fit-content;
+      }
+    }
+  }
+  // ---------- END LESSON 3-21 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-22 ----------
+  #lesson3_22 {
+    h2 {
+      margin-bottom: 40px;
+    }
+    .main__content {
+      max-height: 295px;
+      .left__content {
+        .boy_and_girl {
+          max-width: 97px;
+          margin-left: 0;
+        }
+      }
+      .main_img {
+        margin-top: 12px;
+        margin-right: 86px;
+        max-width: 220px;
+        height: fit-content;
+      }
+    }
+  }
+  .swiper-slide-active#lesson3_22 {
+    .main__content {
+      .main_img {
+        .img_delete {
+          @keyframes delete1 {
+            0% {
+              width: 0%;
+            }
+            25%,
+            50%,
+            100% {
+              width: 145%;
+            }
+          }
+          @keyframes delete2 {
+            0%,
+            25% {
+              width: 0%;
+            }
+            50%,
+            100% {
+              width: 145%;
+            }
+          }
+        }
+        .img_delete {
+          &::before {
+            animation-name: delete1;
+            top: 10px;
+          }
+          &::after {
+            animation-name: delete2;
+            top: 10px;
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 3-22 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-23 ----------
+  #lesson3_23 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      max-height: 295px;
+      .left__content {
+        .boy_and_girl {
+          max-width: 98px;
+          margin-left: -2px;
+        }
+      }
+      .main_img {
+        margin-top: -3px;
+        margin-right: 59px;
+        // max-width: 239px;
+        height: fit-content;
+        height: 100%;
+      }
+    }
+  }
+  .bus2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    .btn_green3 {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      justify-content: center;
+      align-items: center;
+    }
+    .bus2__img {
+      width: 320px;
+      margin-right: 29px;
+      margin-bottom: 10px;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        width: 139px;
+        height: 10px;
+        background-image: url("../img/lesson3/23bus_element.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        position: absolute;
+        left: -146px;
+        top: 107px;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  // ---------- END LESSON 3-23 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-24 ----------
+  #lesson3_24 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      width: 100%;
+
+      .boy_and_girl {
+        max-width: 240px;
+        margin: 0 auto;
+        margin-top: 133px;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 3-24 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-25 ----------
+  #lesson3_25 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      .left__content {
+        max-width: 300px;
+        .boy_and_girl {
+          max-width: 105px;
+          margin-left: 4px;
+        }
+      }
+      .main_img {
+        margin-top: 6px;
+        margin-right: 84px;
+        max-width: 239px;
+        height: fit-content;
+      }
+    }
+  }
+  // ---------- END LESSON 3-25 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-26 ----------
+  #lesson3_26 {
+    h2 {
+      margin-bottom: 40px;
+    }
+    .main__content {
+      .left__content {
+        max-width: 300px;
+        .boy_and_girl {
+          max-width: 105px;
+          margin-left: 4px;
+        }
+      }
+      .main_img {
+        margin-top: 6px;
+        margin-right: 84px;
+        max-width: 239px;
+        height: fit-content;
+      }
+    }
+  }
+  // ---------- END LESSON 3-26 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-27 ----------
+  #lesson3_27 {
+    h2 {
+      margin-bottom: 40px;
+    }
+    .main__content {
+      max-height: 295px;
+      .left__content {
+        .boy_and_girl {
+          max-width: 130px;
+          margin-left: 0;
+        }
+      }
+      .main_img {
+        margin-top: 12px;
+        margin-right: 86px;
+        max-width: 220px;
+        height: fit-content;
+      }
+    }
+  }
+  .swiper-slide-active#lesson3_27 {
+    .main__content {
+      .main_img {
+        .img_delete {
+          @keyframes delete1 {
+            0% {
+              width: 0%;
+            }
+            25%,
+            50%,
+            100% {
+              width: 145%;
+            }
+          }
+          @keyframes delete2 {
+            0%,
+            25% {
+              width: 0%;
+            }
+            50%,
+            100% {
+              width: 145%;
+            }
+          }
+        }
+        .img_delete {
+          &::before {
+            animation-name: delete1;
+            top: 10px;
+          }
+          &::after {
+            animation-name: delete2;
+            top: 10px;
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 3-27 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-28 ----------
+  #lesson3_28 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .main__content {
+      max-height: 295px;
+      .left__content {
+        .boy_and_girl {
+          max-width: 98px;
+          margin-left: -2px;
+        }
+      }
+      .main_img {
+        margin-top: -3px;
+        margin-right: 59px;
+        height: fit-content;
+        height: 100%;
+      }
+    }
+  }
+  // ---------- END LESSON 3-28 ----------
+  // ----------------------------------------
+  // ---------- LESSON 3-29 ----------
+  #lesson3_29 {
+    h2 {
+      margin-bottom: 80px;
+    }
+    .btn_bottom {
+      top: 157px;
+      left: 78px;
+    }
+    .main__content {
+      .left__content {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        .btn_green3 {
+          position: relative;
+          left: auto;
+          top: auto;
+          transform: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 43px;
+          @keyframes text2big {
+            0% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.2);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+      .main_img {
+        margin-top: 37px;
+        margin-right: 41px;
+        max-width: 340px;
+        height: fit-content;
+      }
+    }
+  }
+  // ---------- END LESSON 3-29 ----------
+  // ----------------------------------------
+}
+// ---------- END BLOCK LESSON 3 ----------
+// ----------------------------------------
+// ---------- BLOCK ----------
+// ---------- END BLOCK ----------
+// ========================================
