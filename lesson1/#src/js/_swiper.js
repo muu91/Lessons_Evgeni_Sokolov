@@ -52,8 +52,23 @@ let bl_lesson_1 = new Swiper('.bl_lesson_1', {
       $('.two_block__item__active ').show(0);
       $('.cups__item ').show(0);
       //   // ----- END SLIDE 31-32 -----
-      //   // ----------------------------------------
+      // ----------------------------------------
       AOS.init();
+      // ----------------------------------------
+      // ----- BTNS -----
+      // $('.btn_right').css('pointer-events', 'none')
+      // setTimeout(function () {
+      //   $('.swiper-slide-active').find('.btn_right').css('pointer-events', 'all')
+      // }, 2000);
+
+      $('.swiper-slide').find('.btn_right').css({ 'pointer-events': 'none', 'background-color': '#e1dfda' });
+      $('.swiper-slide').each(function () {
+        setTimeout(function () {
+          $('.swiper-slide-active').find('.btn_right').css({ 'pointer-events': 'all', 'background-color': '#6baa3c' });
+        }, 2000);
+      })
+      // ----- END BTNS -----
+      // ----------------------------------------
     },
   }
 });
@@ -101,6 +116,26 @@ conversion__center[3].addEventListener('click', () => {
   }
 });
 // ---------- END SLIDE 26 ----------
+// ----------------------------------------
+// ---------- SLIDE BTN PREV ----------
+
+const btn_go_7to5 = document.querySelector('#lesson1_7 .swiper-button-prev');
+const btn_go_32to30 = document.querySelector('#lesson1_32 .swiper-button-prev');
+
+
+btn_go_7to5.addEventListener('click', () => {
+  bl_lesson_1.slideTo(4);
+});
+btn_go_32to30.addEventListener('click', () => {
+  bl_lesson_1.slideTo(18);
+});
+
+const btn_go_1to30 = document.querySelector('#lesson1_1 .swiper-button-next');
+btn_go_1to30.addEventListener('click', () => {
+  bl_lesson_1.slideTo(9);
+});
+
+// ---------- END SLIDE BTN PREV ----------
 // ----------------------------------------
 // ---------- SLIDE 26-31 ----------
 
@@ -199,6 +234,8 @@ conversion__center[3].addEventListener('click', () => {
 //     }, 5000);
 //   }
 // });
+
+
 
 
 // ---------- END SLIDE 26-31 ----------

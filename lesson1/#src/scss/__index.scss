@@ -52,12 +52,15 @@ main {
     top: 158px;
     left: 136px;
     z-index: 5;
+    pointer-events: none;
+
     img {
       height: 24px;
       width: 13px;
       margin-left: 8px;
     }
   }
+
   .btn_left {
     top: 158px;
     left: 75px;
@@ -75,6 +78,13 @@ main {
       height: 13px;
       margin-top: 8px;
     }
+  }
+  .swiper-slide-active {
+    // .btn_right {
+    //   transition-delay: 2s;
+    //   transition-duration: 0.3s;
+    //   background-color: $green;
+    // }
   }
 }
 .bl_lesson1 {
@@ -377,7 +387,7 @@ main {
   }
   .swiper-slide-active#lesson1_3 {
     .btn_right {
-      animation-delay: 3s;
+      animation-delay: 2s;
       animation-name: btn2green;
       animation-duration: 0.5s;
       animation-iteration-count: 1;
@@ -438,7 +448,7 @@ main {
   }
   .swiper-slide-active#lesson1_4 {
     .btn_right {
-      animation-delay: 4s;
+      animation-delay: 2s;
       animation-name: btn2green;
       animation-duration: 0.5s;
       animation-iteration-count: 1;

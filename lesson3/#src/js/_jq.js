@@ -238,49 +238,93 @@ $(document).ready(function () {
 
     $('.swiper-button-next, .swiper-button-prev').click(function () {
         if ($('#lesson3_3').hasClass('swiper-slide-active')) {
-            quick_text3.reset();
+            setTimeout(function () {
+                quick_text3.reset();
+            }, 250);
         } else if ($('#lesson3_4').hasClass('swiper-slide-active')) {
-            quick_text4.reset();
+            setTimeout(function () {
+                quick_text4.reset();
+            }, 250);
         } else if ($('#lesson3_5').hasClass('swiper-slide-active')) {
-            quick_text5.reset();
+            setTimeout(function () {
+                quick_text5.reset();
+            }, 250);
         } else if ($('#lesson3_6').hasClass('swiper-slide-active')) {
-            quick_text6.reset();
+            setTimeout(function () {
+                quick_text6.reset();
+            }, 250);
         } else if ($('#lesson3_7').hasClass('swiper-slide-active')) {
-            quick_text7.reset();
+            setTimeout(function () {
+                quick_text7.reset();
+            }, 250);
         } else if ($('#lesson3_8').hasClass('swiper-slide-active')) {
-            quick_text8.reset();
+            setTimeout(function () {
+                quick_text8.reset();
+            }, 250);
         } else if ($('#lesson3_9').hasClass('swiper-slide-active')) {
-            quick_text9.reset();
+            setTimeout(function () {
+                quick_text9.reset();
+            }, 250);
         } else if ($('#lesson3_10').hasClass('swiper-slide-active')) {
-            quick_text10.reset();
+            setTimeout(function () {
+                quick_text10.reset();
+            }, 250);
         } else if ($('#lesson3_11').hasClass('swiper-slide-active')) {
-            quick_text11.reset();
+            setTimeout(function () {
+                quick_text11.reset();
+            }, 250);
         } else if ($('#lesson3_12').hasClass('swiper-slide-active')) {
-            quick_text12.reset();
+            setTimeout(function () {
+                quick_text12.reset();
+            }, 250);
         } else if ($('#lesson3_14').hasClass('swiper-slide-active')) {
-            quick_text14.reset();
+            setTimeout(function () {
+                quick_text14.reset();
+            }, 250);
         } else if ($('#lesson3_15').hasClass('swiper-slide-active')) {
-            quick_text15.reset();
+            setTimeout(function () {
+                quick_text15.reset();
+            }, 250);
         } else if ($('#lesson3_16').hasClass('swiper-slide-active')) {
-            quick_text16.reset();
+            setTimeout(function () {
+                quick_text16.reset();
+            }, 250);
         } else if ($('#lesson3_20').hasClass('swiper-slide-active')) {
-            quick_text20.reset();
+            setTimeout(function () {
+                quick_text20.reset();
+            }, 250);
         } else if ($('#lesson3_21').hasClass('swiper-slide-active')) {
-            quick_text21.reset();
+            setTimeout(function () {
+                quick_text21.reset();
+            }, 250);
         } else if ($('#lesson3_22').hasClass('swiper-slide-active')) {
-            quick_text22.reset();
+            setTimeout(function () {
+                quick_text22.reset();
+            }, 250);
         } else if ($('#lesson3_23').hasClass('swiper-slide-active')) {
-            quick_text23.reset();
+            setTimeout(function () {
+                quick_text23.reset();
+            }, 250);
         } else if ($('#lesson3_25').hasClass('swiper-slide-active')) {
-            quick_text25.reset();
+            setTimeout(function () {
+                quick_text25.reset();
+            }, 250);
         } else if ($('#lesson3_26').hasClass('swiper-slide-active')) {
-            quick_text26.reset();
+            setTimeout(function () {
+                quick_text26.reset();
+            }, 250);
         } else if ($('#lesson3_27').hasClass('swiper-slide-active')) {
-            quick_text27.reset();
+            setTimeout(function () {
+                quick_text27.reset();
+            }, 250);
         } else if ($('#lesson3_28').hasClass('swiper-slide-active')) {
-            quick_text28.reset();
+            setTimeout(function () {
+                quick_text28.reset();
+            }, 250);
         } else if ($('#lesson3_29').hasClass('swiper-slide-active')) {
-            quick_text29.reset();
+            setTimeout(function () {
+                quick_text29.reset();
+            }, 250);
         }
     });
     // ----------------------------------------
@@ -318,6 +362,23 @@ $(document).ready(function () {
     });
     // ----- END LESSON 3-19  -----
     // ----------------------------------------
+    // ----- BTNS RIGHT -----
+    setTimeout(function () {
+        $('.swiper-slide-active').find('.btn_right').css('pointer-events', 'all')
+    }, 2000);
+    // if ($('.swiper-slide').hasClass('swiper-slide-active')) {
+    // }
+    // $('.swiper-button-next, .swiper-button-prev').click(function () {
+    //     // $('.btn_right').css('pointer-events', 'none')
+    //     // setTimeout(function () {
+    //     //     $('.swiper-slide-active').find('.btn_right').css('pointer-events', 'all')
+    //     // }, 2000);
+    //     // $('.swiper-slide').each(function () {
+    //     // })
+    // });
+    // ----- END BTNS RIGHT -----
+    // ----------------------------------------
+
     // ---------- END OTHER ----------
     // ========================================
 

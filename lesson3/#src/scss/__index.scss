@@ -51,6 +51,7 @@ main {
   .btn_right {
     top: 179px;
     left: 136px;
+    pointer-events: none;
     img {
       height: 24px;
       width: 13px;
@@ -73,6 +74,13 @@ main {
       width: 24px;
       height: 13px;
       margin-top: 8px;
+    }
+  }
+  .swiper-slide-active {
+    .btn_right {
+      transition-delay: 2s;
+      transition-duration: 0.3s;
+      background-color: $green;
     }
   }
   [data-animatee] {
@@ -124,6 +132,92 @@ main {
       width: 100%;
       img {
         display: block;
+      }
+    }
+  }
+  .main_bus {
+    width: 320px;
+    height: 158px;
+    position: relative;
+    img {
+      display: block;
+      position: absolute;
+    }
+    .bus01 {
+      left: 0;
+      top: 0;
+      width: 100%;
+      animation-name: bus01;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      // animation-timing-function: linear;
+    }
+    @keyframes bus01 {
+      0% {
+        transform: translateY(0) rotate(0);
+      }
+      10% {
+        transform: translateY(-4px);
+      }
+      25% {
+        transform: translateY(3px) rotate(1deg);
+      }
+
+      40% {
+        transform: translateY(1px) rotate(-1deg);
+      }
+      50% {
+        transform: translateY(0) rotate(0);
+      }
+      100% {
+        transform: translateY(0) rotate(0);
+      }
+    }
+    .bus_wheels_01 {
+      width: 50px !important;
+      bottom: 0;
+      left: 63px;
+      z-index: 5;
+      animation-name: bus_wheels_01;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .bus_wheels_02 {
+      width: 50px !important;
+      right: 26px;
+      bottom: 2px;
+      z-index: 5;
+      animation-name: bus_wheels_01;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    @keyframes bus_wheels_01 {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .bus_earth01 {
+      bottom: 0;
+      left: 0;
+      animation-name: bus_earth01;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    @keyframes bus_earth01 {
+      0% {
+        transform: translateX(-20px);
+      }
+      20% {
+        transform: translateX(20px);
+      }
+      100% {
+        transform: translateX(-20px);
       }
     }
   }
@@ -201,8 +295,74 @@ main {
       }
       .main_img {
         max-width: 215px;
-        margin-right: 93px;
+        margin-right: 55px;
         padding-top: 10px;
+        position: relative;
+        .lamp01 {
+          position: absolute;
+          width: 20px;
+          left: 42px;
+          top: 79px;
+          transform-origin: top;
+          animation-name: lamp01;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-delay: 0;
+        }
+        @keyframes lamp01 {
+          0% {
+            transform: rotate(0);
+          }
+          20% {
+            transform: rotate(15deg);
+          }
+          30% {
+            transform: rotate(-15deg);
+          }
+          40% {
+            transform: rotate(10deg);
+          }
+          50% {
+            transform: rotate(-10deg);
+          }
+          60%,
+          100% {
+            transform: rotate(0);
+          }
+        }
+        .lamp02 {
+          position: absolute;
+          right: 52px;
+          top: 84px;
+          width: 20px;
+          transform-origin: top;
+          animation-name: lamp01;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-delay: 0.1s;
+        }
+        .lamp03 {
+          position: absolute;
+          left: 16px;
+          bottom: 52px;
+          width: 20px;
+          transform-origin: top;
+          animation-name: lamp01;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-delay: 0.2s;
+        }
+        .lamp04 {
+          position: absolute;
+          right: 28px;
+          bottom: 48px;
+          width: 20px;
+          transform-origin: top;
+          animation-name: lamp01;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-delay: 0.3s;
+        }
       }
     }
   }

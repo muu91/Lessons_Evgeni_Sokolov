@@ -32,7 +32,12 @@ const bl_lesson_1 = new Swiper('.bl_lesson_3', {
       // ----------------------------------------
       // ----- SLIDE 1-10 -----
       // $('.blue_blocks__item_active').show(0);
+      $('.btn_right').css('pointer-events', 'none')
+      setTimeout(function () {
+        $('.swiper-slide-active').find('.btn_right').css('pointer-events', 'all')
+      }, 1800);
       // ----- END SLIDE 1-10 -----
+
       // ----------------------------------------
       // AOS.init();
     },

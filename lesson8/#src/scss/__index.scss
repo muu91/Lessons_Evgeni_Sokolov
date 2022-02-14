@@ -1,0 +1,657 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- BLOCK LESSON 1 ----------
+main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.d-none {
+  display: none !important;
+}
+.bl_lesson {
+  position: relative;
+  z-index: 50;
+  max-width: 887px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  .bl_lesson__content {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          position: relative;
+          height: 490px;
+          padding-top: 40px;
+          padding-left: 40px;
+          padding-right: 40px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .btn_slide {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    position: absolute;
+    background-color: $grey;
+
+    &:hover {
+      border: 1px solid $black;
+      transition: 0.3s;
+    }
+  }
+  .btn_right {
+    top: 179px;
+    left: 136px;
+    pointer-events: none;
+    img {
+      height: 24px;
+      width: 13px;
+      margin-left: 8px;
+    }
+  }
+  .swiper-slide-active {
+    .btn_right {
+      transition-delay: 2s;
+      transition-duration: 0.3s;
+      background-color: $green;
+    }
+  }
+  .btn_left {
+    top: 179px;
+    left: 75px;
+    img {
+      height: 24px;
+      width: 13px;
+      margin-right: 8px;
+    }
+  }
+  .btn_bottom {
+    top: 179px;
+    left: 75px;
+    img {
+      width: 24px;
+      height: 13px;
+      margin-top: 8px;
+    }
+  }
+  [data-animatee8] {
+    opacity: 0;
+    transition: all 0.8s ease 1s;
+    transform: perspective(1000px) rotateY(-180deg);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  .swiper-slide-active {
+    [data-animatee8="animatee__active"] {
+      transition: all 1s ease 0s;
+      opacity: 1;
+      transform: perspective(1000px) rotateY(0);
+    }
+  }
+  [data-animatee8-24] {
+    opacity: 0;
+    transition: all 0.8s ease 1s;
+    transform: perspective(1000px) rotateY(-180deg);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  .swiper-slide-active {
+    [data-animatee8-24="animatee__active"] {
+      transition: all 1s ease 0s;
+      opacity: 1;
+      transform: perspective(1000px) rotateY(0);
+    }
+  }
+  .quick_texts {
+    position: relative;
+    .hide_text {
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -10;
+    }
+  }
+  .lesson3,
+  .lesson7 {
+    height: 100%;
+  }
+}
+.bl_lesson8 {
+  // ---------- LESSON 8-1 ----------
+  #lesson8_1 {
+    .btn_right {
+      left: auto;
+      right: 236px;
+      top: 295px;
+    }
+    .main_img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      img {
+        display: block;
+        max-width: 313px;
+        width: 100%;
+        margin-right: 55px;
+        margin-top: -20px;
+        animation-name: main_img01;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes main_img01 {
+        0% {
+          transform: scaleY(1) translateY(0px);
+        }
+        5% {
+          transform: scaleY(0.8) translateY(0px);
+        }
+        10% {
+          transform: scaleY(1.2) translateY(-20px);
+        }
+        25% {
+          transform: scaleY(1) translateY(0px);
+        }
+        100% {
+          transform: scaleY(1) translateY(0px);
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 8-1 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-2 ----------
+  #lesson8_2 {
+    .btn_green3 {
+      top: 173px;
+    }
+    .main_img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        display: block;
+        max-width: 160px;
+        width: 100%;
+        margin-top: 97px;
+        margin-right: 0;
+      }
+    }
+  }
+  // ---------- END LESSON 8-2 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-3 ----------
+  .main__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 38px;
+    .left__content {
+      max-width: 315px;
+      width: 100%;
+      margin-right: 20px;
+      margin-top: 32px;
+    }
+  }
+  .swiper-slide {
+    .main__content {
+      .main_img {
+        .img_appearance {
+          transform: scale(0);
+          transition: 0.3s;
+          transition-delay: 1s;
+        }
+      }
+    }
+  }
+  .swiper-slide.swiper-slide-active {
+    .main__content {
+      .main_img {
+        .img_appearance {
+          transform: scale(1);
+          transition: 3s;
+        }
+      }
+    }
+  }
+  #lesson8_3 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 310px;
+        }
+      }
+      .main_img {
+        margin-top: -44px;
+        padding-right: 42px;
+        width: 338px;
+        position: relative;
+      }
+    }
+  }
+  // ---------- END LESSON 8-3 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-4 ----------
+  #lesson8_4 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: -44px;
+        padding-right: 42px;
+        width: 338px;
+        position: relative;
+      }
+    }
+  }
+  // ---------- END LESSON 8-4 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-5 ----------
+  #lesson8_5 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: -44px;
+        padding-right: 42px;
+        width: 338px;
+        position: relative;
+      }
+    }
+  }
+  // ---------- END LESSON 8-5 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-8 ----------
+  .grey_long__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 600px;
+    .grey_long__item {
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center center;
+      padding: 20px 25px;
+      &:first-child {
+        background-image: url("../img/lesson8/08bg_grey_long1.png");
+      }
+      &:nth-child(2) {
+        background-image: url("../img/lesson8/08bg_grey_long2.png");
+      }
+      &:nth-child(3) {
+        background-image: url("../img/lesson8/08bg_grey_long3.png");
+      }
+      h3 {
+        color: $black;
+        font-family: $CC;
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: -0.3px;
+        min-height: 60px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  #lesson8_8 {
+    .btn_right8_8 {
+      top: 156px;
+      z-index: 50;
+    }
+    .main__content {
+      .left__content {
+        max-width: 0;
+        margin-right: 0;
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: -54px;
+        padding-right: 35px;
+        position: relative;
+      }
+    }
+  }
+  // ---------- END LESSON 8-8 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-9 ----------
+  #lesson8_9 {
+    .main__content {
+      .left__content {
+        max-width: 220px;
+        .main__texts {
+          max-width: 220px;
+        }
+      }
+      .main_img {
+        margin-top: 0;
+        margin-left: 23px;
+        padding-right: 0;
+        position: relative;
+        width: 100%;
+        .main_img09 {
+          display: block;
+          width: 204px;
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 8-9 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-10 ----------
+  #lesson8_10 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 285px;
+        }
+      }
+      .main_img {
+        margin-top: -46px;
+        padding-right: 0;
+        width: 395px;
+        position: relative;
+      }
+    }
+  }
+  // ---------- END LESSON 8-10 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-11 ----------
+  #lesson8_11 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 310px;
+        }
+      }
+      .main_img {
+        margin-top: -46px;
+        padding-right: 0;
+        width: 395px;
+        position: relative;
+      }
+    }
+  }
+  // ---------- END LESSON 8-11 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-12 ----------
+  #lesson8_12 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 310px;
+        }
+      }
+      .main_img {
+        margin-top: -51px;
+        padding-right: 0;
+        width: 327px;
+        position: relative;
+      }
+    }
+  }
+  // ---------- END LESSON 8-12 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-13 ----------
+  #lesson8_13 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 267px;
+        }
+      }
+      .main_img {
+        margin-top: -46px;
+        padding-right: 0;
+        width: 340px;
+        position: relative;
+      }
+    }
+  }
+  // ---------- END LESSON 8-13 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-14 ----------
+  #lesson8_14 {
+    .btn_green3 {
+      top: 173px;
+    }
+    .main_img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        display: block;
+        max-width: 149px;
+        width: 100%;
+        margin-top: 69px;
+        margin-right: 7px;
+      }
+    }
+  }
+  // ---------- END LESSON 8-14 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-15 ----------
+  .materials__items {
+    display: grid;
+    grid-template-columns: repeat(2, 90px);
+    gap: 19px 26px;
+    .materials__item {
+      height: 88px;
+      border-radius: 10px;
+      border: 1px solid #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+    .materials__item--active {
+      background-color: $green;
+    }
+  }
+  #lesson8_15 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 310px;
+        }
+      }
+      .main_img {
+        margin-top: -53px;
+        padding-right: 113px;
+        position: relative;
+      }
+    }
+  }
+  // ---------- END LESSON 8-15 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-16 ----------
+  #lesson8_16 {
+    .main__content {
+      .left__content {
+        max-width: 333px;
+        .main__texts {
+          max-width: 333px;
+        }
+      }
+      .main_img {
+        margin-top: -53px;
+        padding-right: 113px;
+        position: relative;
+      }
+    }
+  }
+  // ---------- END LESSON 8-16 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-17 ----------
+  #lesson8_17 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: -53px;
+        padding-right: 113px;
+        position: relative;
+      }
+    }
+  }
+  // ---------- END LESSON 8-17 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-18 ----------
+  #lesson8_18 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: -53px;
+        padding-right: 113px;
+        position: relative;
+      }
+    }
+  }
+  // ---------- END LESSON 8-18 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-19 ----------
+  #lesson8_19 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: -53px;
+        padding-right: 113px;
+        position: relative;
+      }
+    }
+  }
+  // ---------- END LESSON 8-19 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-20 ----------
+  #lesson8_20 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 290px;
+        }
+      }
+      .main_img {
+        margin-top: -53px;
+        padding-right: 113px;
+        position: relative;
+      }
+    }
+  }
+  // ---------- END LESSON 8-20 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-24 ----------
+  #lesson8_24 {
+    .btn_right8_8-24 {
+      top: 156px;
+      z-index: 50;
+    }
+    .main__content {
+      .left__content {
+        max-width: 0;
+        margin-right: 0;
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: -85px;
+        padding-right: 0;
+        position: relative;
+        .grey_long__items {
+          max-width: 640px;
+          .grey_long__item {
+            padding: 20px 18px;
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 8-24 ----------
+  // ----------------------------------------
+  // ---------- LESSON 8-25 ----------
+  #lesson8_25 {
+    .btn_bottom {
+      top: 156px;
+      left: 78px;
+    }
+    .main__content {
+      .left__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .main__texts {
+          max-width: 280px;
+        }
+        .btn_green4 {
+          position: static;
+          left: auto;
+          top: auto;
+          transform: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 24px;
+        }
+      }
+      .main_img {
+        margin-top: -51px;
+        padding-right: 15px;
+        position: relative;
+        img {
+          width: 328px;
+          display: block;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 8-25 ----------
+  // ----------------------------------------
+
+  // ----------------------------------------
+}
+// ---------- END BLOCK LESSON 8 ----------
+// ----------------------------------------
+// ========================================

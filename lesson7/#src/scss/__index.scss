@@ -1,0 +1,2154 @@
+// ========================================
+// ---------- VARIABLES ----------
+@import "__variables.scss";
+// ---------- END VARIABLES ----------
+// ========================================
+// ---------- BLOCK LESSON 1 ----------
+main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.d-none {
+  display: none !important;
+}
+.bl_lesson {
+  position: relative;
+  z-index: 50;
+  max-width: 887px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  .bl_lesson__content {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          position: relative;
+          height: 490px;
+          padding-top: 40px;
+          padding-left: 40px;
+          padding-right: 40px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .btn_slide {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    position: absolute;
+    background-color: $grey;
+
+    &:hover {
+      border: 1px solid $black;
+      transition: 0.3s;
+    }
+  }
+  .btn_right {
+    top: 179px;
+    left: 136px;
+    img {
+      height: 24px;
+      width: 13px;
+      margin-left: 8px;
+    }
+  }
+  .swiper-slide-active {
+    .btn_right {
+      transition-delay: 2s;
+      transition-duration: 0.3s;
+      background-color: $green;
+    }
+  }
+  .btn_left {
+    top: 179px;
+    left: 75px;
+    img {
+      height: 24px;
+      width: 13px;
+      margin-right: 8px;
+    }
+  }
+  .btn_bottom {
+    top: 179px;
+    left: 75px;
+    img {
+      width: 24px;
+      height: 13px;
+      margin-top: 8px;
+    }
+  }
+  [data-animatee7] {
+    opacity: 0;
+    transition: all 0.8s ease 1s;
+    transform: translateX(-20px);
+  }
+  .swiper-slide-active {
+    [data-animatee7="animatee__active"] {
+      transition: all 0.8s ease 0.3s;
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .quick_texts {
+    position: relative;
+    .hide_text {
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -10;
+    }
+  }
+  .lesson3,
+  .lesson7 {
+    height: 100%;
+  }
+}
+.bl_lesson7 {
+  .swiper-slide {
+    transition: all 1s ease-out 1s;
+    opacity: 0;
+  }
+  .swiper-slide-active {
+    opacity: 1;
+    transition: all 0.2s ease-out;
+  }
+  // ---------- LESSON 7-1 ----------
+  #lesson7_1 {
+    .btn_right {
+      left: auto;
+      right: 236px;
+      top: 295px;
+    }
+    .main_img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      img {
+        display: block;
+        max-width: 113px;
+        width: 100%;
+        margin-left: 38px;
+      }
+      .heart {
+        position: absolute;
+        top: 75px;
+        right: 324px;
+        width: 20px;
+        margin-left: 0;
+        animation-name: heart2Scale;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes heart2Scale {
+        0% {
+          transform: scale(1);
+          transform-origin: left;
+          right: 324px;
+        }
+        50% {
+          transform: scale(2);
+          right: 310px;
+        }
+        100% {
+          right: 324px;
+          transform: scale(1);
+          transform-origin: left;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-1 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-2 ----------
+  #lesson7_2 {
+    .btn_green3 {
+      top: 173px;
+    }
+    .main_img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        display: block;
+        max-width: 102px;
+        width: 100%;
+        margin-top: 21px;
+        margin-right: 8px;
+      }
+    }
+  }
+  // ---------- END LESSON 7-2 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-3 ----------
+  .main__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 38px;
+    .left__content {
+      max-width: 315px;
+      width: 100%;
+      margin-right: 20px;
+      margin-top: 32px;
+    }
+  }
+
+  #lesson7_3 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: -8px;
+        padding-right: 34px;
+        width: 362px;
+        height: 216px;
+        position: relative;
+        .rope_main {
+          width: 328px;
+        }
+        .rope_left {
+          position: absolute;
+          left: 54px;
+          top: 27px;
+          width: 47px;
+          animation-name: rope2wiggle;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+          animation-timing-function: cubic-bezier(0.1, -0.3, 0.3, 0);
+          transform-origin: center 15px;
+          perspective: 1000px;
+        }
+        .rope_center {
+          position: absolute;
+          top: 39px;
+          left: 108px;
+          width: 108px;
+          animation-name: rope2wiggle;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+          transform-origin: center 15px;
+          perspective: 1000px;
+        }
+        .rope_right {
+          position: absolute;
+          top: 31px;
+          right: 100px;
+          width: 42px;
+          animation-name: rope2wiggle;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+          animation-timing-function: cubic-bezier(0.1, -0.4, 0.2, 0);
+          transform-origin: center 15px;
+          perspective: 1000px;
+        }
+        @keyframes rope2wiggle {
+          0% {
+            transform: rotateX(0) skewX(0);
+          }
+          25% {
+            transform: rotateX(45deg) skewX(10deg);
+          }
+          50% {
+            transform: rotateX(-45deg) skewX(-15deg);
+          }
+          100% {
+            transform: rotateX(0) skewX(0);
+          }
+        }
+      }
+    }
+  }
+
+  // ---------- END LESSON 7-3 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-4 ----------
+  #lesson7_4 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 315px;
+        }
+      }
+      .main_img {
+        margin-top: 21px;
+        padding-right: 58px;
+        img {
+          width: 224px;
+          display: block;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-4 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-5 ----------
+  #lesson7_5 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 308px;
+        }
+      }
+      .main_img {
+        margin-top: 16px;
+        padding-right: 89px;
+        img {
+          width: 163px;
+          display: block;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-5 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-6 ----------
+  #lesson7_6 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: 32px;
+        margin-right: 157px;
+        position: relative;
+        width: 139px;
+        height: 140px;
+        img {
+          display: block;
+          transition: 0.3s;
+        }
+        .cloud_left {
+          position: absolute;
+          top: 7px;
+          left: -68px;
+          width: 60px;
+          animation-name: cloud2scale;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-delay: 0;
+          animation-play-state: paused;
+        }
+        .cloud_center {
+          position: absolute;
+          top: -79px;
+          left: 42px;
+          width: 64px;
+          animation-name: cloud2scale;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-delay: 0.5s;
+          animation-play-state: paused;
+        }
+        .cloud_right {
+          position: absolute;
+          right: -93px;
+          top: -29px;
+          width: 46px;
+          animation-name: cloud2scale;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-delay: 1s;
+          animation-play-state: paused;
+        }
+        @keyframes cloud2scale {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.3);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+  .swiper-slide-active#lesson7_6 {
+    .main__content {
+      .main_img {
+        .cloud_left {
+          animation-play-state: running;
+        }
+        .cloud_center {
+          animation-play-state: running;
+        }
+        .cloud_right {
+          animation-play-state: running;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-6 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-7 ----------
+  #lesson7_7 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: 0;
+        margin-right: 30px;
+        position: relative;
+        width: 330px;
+        height: 181px;
+        img {
+          position: absolute;
+          display: block;
+          transition: 0.3s;
+        }
+
+        .flowers {
+          left: 1px;
+          bottom: 0;
+          width: 85px;
+        }
+        .shtuka_center {
+          left: 131px;
+          bottom: 0;
+          width: 50px;
+        }
+        .lama {
+          right: 4px;
+          bottom: 0;
+          width: 108px;
+        }
+        .arrow_top {
+          bottom: 69px;
+          left: 145px;
+          width: 14px;
+        }
+        .hat_green {
+          top: 29px;
+          left: 108px;
+          width: 84px;
+        }
+        .birds {
+          top: -41px;
+          right: 2px;
+          width: 124px;
+        }
+      }
+    }
+  }
+  .swiper-slide-active#lesson7_7 {
+    .main__content {
+      .main_img {
+        margin-top: 0;
+        margin-right: 30px;
+        position: relative;
+        width: 330px;
+        height: 181px;
+        @keyframes img2scale7 {
+          0% {
+            transform: scale(1);
+          }
+          25% {
+            transform: scale(1.3);
+          }
+          50%,
+          100% {
+            transform: scale(1);
+          }
+        }
+        @keyframes img2scale7lama {
+          0% {
+            transform: scale(1);
+          }
+          25% {
+            transform: scale(1.2);
+          }
+          50%,
+          100% {
+            transform: scale(1);
+          }
+        }
+        .flowers {
+          animation-name: img2scale7;
+          animation-play-state: running;
+          animation-iteration-count: 1;
+          animation-direction: normal;
+          animation-fill-mode: both;
+          animation-duration: 8s;
+          animation-delay: 0s;
+        }
+        .shtuka_center {
+          animation-name: img2scale7;
+          animation-play-state: running;
+          animation-iteration-count: 1;
+          animation-direction: normal;
+          animation-fill-mode: both;
+          animation-duration: 8s;
+          animation-delay: 1s;
+        }
+        .lama {
+          animation-name: img2scale7lama;
+          animation-play-state: running;
+          animation-iteration-count: 1;
+          animation-direction: normal;
+          animation-fill-mode: both;
+          animation-duration: 8s;
+          animation-delay: 2s;
+        }
+        .arrow_top {
+          bottom: 69px;
+          left: 145px;
+          width: 14px;
+        }
+        .hat_green {
+          top: 29px;
+          left: 108px;
+          width: 84px;
+          transform: scale(1.5);
+          transition-duration: 3s;
+          transition-delay: 5s;
+        }
+        .birds {
+          top: -41px;
+          right: 2px;
+          width: 124px;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-7 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-8 ----------
+  #lesson7_8 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: 86px;
+        margin-right: 30px;
+        position: relative;
+        img {
+          display: block;
+          transition: 0.3s;
+          width: 322px;
+        }
+        .hat_green {
+          position: absolute;
+          top: -64px;
+          left: 110px;
+          width: 74px;
+          animation-name: hat2rotate;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+          animation-play-state: paused;
+        }
+        @keyframes hat2rotate {
+          0% {
+            transform: rotate(0deg);
+          }
+          20% {
+            transform: rotate(60deg);
+          }
+          50% {
+            transform: rotate(60deg);
+          }
+          20% {
+            transform: rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+  .swiper-slide-active#lesson7_8 {
+    .main__content {
+      .main_img {
+        .hat_green {
+          animation-play-state: running;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-8 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-9 ----------
+  #lesson7_9 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: 0;
+        margin-right: 0;
+        position: relative;
+        .car9 {
+          width: 320px;
+          height: 160px;
+          position: relative;
+          margin-top: 23px;
+          margin-right: -15px;
+          img {
+            display: block;
+            transition: 0.3s;
+          }
+          .car9__img {
+            animation-name: car9translate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: center center;
+          }
+          @keyframes car9translate {
+            0% {
+              transform: translateY(0) rotate(0deg);
+            }
+            20% {
+              transform: translateY(-4px) rotate(0.5deg);
+            }
+            30% {
+              transform: translateY(0) rotate(0deg);
+            }
+            50% {
+              transform: translateY(-3px) rotate(1deg);
+            }
+            100% {
+              transform: translateY(0) rotate(0deg);
+            }
+          }
+          .grass_left {
+            display: block;
+            position: absolute;
+            bottom: -2px;
+            left: 30px;
+            width: 77px;
+            animation-name: grass2translate;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+          }
+          .grass_right {
+            position: absolute;
+            bottom: -2px;
+            right: 10px;
+            width: 47px;
+            animation-name: grass2translate;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+          }
+          @keyframes grass2translate {
+            0% {
+              transform: translateX(-10px);
+            }
+            70% {
+              transform: translateX(-20px);
+            }
+            100% {
+              transform: translateX(-10px);
+            }
+          }
+          .smoke {
+            position: absolute;
+            left: -70px;
+            bottom: 41px;
+            width: 58px;
+            animation-name: smoke2rotate;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transform-origin: right;
+          }
+          @keyframes smoke2rotate {
+            0% {
+              transform: rotate(10deg) scale(0.4);
+              opacity: 1;
+            }
+            10% {
+              transform: rotate(-10deg) scale(0.8);
+            }
+            20% {
+              transform: rotate(0) scale(0.6);
+            }
+            30% {
+              transform: rotate(0) scale(1);
+            }
+            80% {
+              opacity: 1;
+              transform: rotate(0) scale(1.1);
+            }
+            100% {
+              transform: rotate(10deg) scale(0.4);
+              opacity: 0;
+            }
+          }
+          .wheel_left {
+            position: absolute;
+            bottom: 3px;
+            left: 40px;
+            width: 56px;
+            height: 56px;
+            z-index: 5;
+            animation-name: wheel2rotate;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+          }
+          .wheel_right {
+            position: absolute;
+            bottom: 2px;
+            right: 11px;
+            width: 56px;
+            height: 56px;
+            z-index: 5;
+            animation-name: wheel2rotate;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+          }
+          @keyframes wheel2rotate {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-9 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-10 ----------
+  #lesson7_10 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: 0;
+        margin-right: 0;
+        position: relative;
+        .hanger {
+          position: relative;
+          width: 70px;
+          margin-right: 176px;
+          margin-top: 18px;
+          .hat_green10 {
+            display: block;
+            position: absolute;
+            min-width: 100px;
+            max-width: 100px;
+            top: -14px;
+            left: -18px;
+            animation-name: hat_green10;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes hat_green10 {
+            0% {
+              transform: rotate(0);
+            }
+            5% {
+              transform: rotate(40deg);
+            }
+            50% {
+              transform: rotate(40deg);
+            }
+            55% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(0deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-10 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-11 ----------
+  #lesson7_11 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: 0;
+        margin-right: 0;
+        position: relative;
+        .hanger {
+          position: relative;
+          width: 70px;
+          margin-right: 176px;
+          margin-top: 18px;
+          .hat_green11 {
+            display: block;
+            position: absolute;
+            min-width: 100px;
+            max-width: 100px;
+            top: -14px;
+            left: -18px;
+            animation-name: hat_green10;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-delay: 0;
+            animation-play-state: paused;
+            z-index: 5;
+          }
+          @keyframes hat_green11 {
+            0% {
+              transform: rotate(0);
+            }
+            5% {
+              transform: rotate(40deg);
+            }
+            50% {
+              transform: rotate(40deg);
+            }
+            55% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(0deg);
+            }
+          }
+          .cap11_1 {
+            display: block;
+            position: absolute;
+            left: -40px;
+            top: 65px;
+            width: 63px;
+            animation-name: cap11_left;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.8s;
+            animation-play-state: paused;
+          }
+          @keyframes cap11_left {
+            0% {
+              transform: rotate(0);
+            }
+            5% {
+              transform: rotate(-30deg);
+            }
+            50% {
+              transform: rotate(-30deg);
+            }
+            55% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(0deg);
+            }
+          }
+          .cap11_2 {
+            display: block;
+            position: absolute;
+            right: -50px;
+            top: 24px;
+            min-width: 78px;
+            max-width: 78px;
+            animation-name: cap11_right;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-delay: 1.6s;
+            animation-play-state: paused;
+          }
+          .cap11_3 {
+            display: block;
+            position: absolute;
+            right: -46px;
+            top: 71px;
+            min-width: 74px;
+            max-width: 73px;
+            animation-name: cap11_right;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-delay: 2.4s;
+            animation-play-state: paused;
+          }
+          @keyframes cap11_right {
+            0% {
+              transform: rotate(0);
+            }
+            5% {
+              transform: rotate(30deg);
+            }
+            50% {
+              transform: rotate(30deg);
+            }
+            55% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(0deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .swiper-slide-active#lesson7_11 {
+    .main__content {
+      .main_img {
+        .hanger {
+          .hat_green11 {
+            animation-play-state: running;
+          }
+          .cap11_1 {
+            animation-play-state: running;
+          }
+          .cap11_2 {
+            animation-play-state: running;
+          }
+          .cap11_3 {
+            animation-play-state: running;
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-11 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-12 ----------
+  #lesson7_12 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: 0;
+        margin-right: 0;
+        position: relative;
+        .thing12 {
+          position: relative;
+          width: 82px;
+          height: 115px;
+          margin-right: 153px;
+          margin-top: 55px;
+          img {
+            display: inline-block;
+          }
+          .dog12 {
+            width: 82px;
+          }
+          .thing12__img {
+            width: 63px;
+            position: absolute;
+            right: -102px;
+            bottom: 0;
+            transition: 1s;
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+  .swiper-slide-active#lesson7_12 {
+    .main__content {
+      .main_img {
+        .thing12 {
+          .thing12__img {
+            transition: 3s;
+            transform: scale(1.6);
+            transform-origin: bottom;
+            transition-delay: 0.8s;
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-12 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-13 ----------
+  #lesson7_13 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: 0;
+        margin-right: 0;
+        position: relative;
+        .dog13 {
+          width: 145px;
+          display: block;
+          margin-right: 99px;
+          margin-top: 39px;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-13 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-14 ----------
+  #lesson7_14 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: 0;
+        margin-right: 0;
+        position: relative;
+        .dog14 {
+          width: 147px;
+          display: block;
+          margin-right: 105px;
+          margin-top: -13px;
+        }
+        .stop_block {
+          position: absolute;
+          top: -9px;
+          right: 109px;
+          width: 72.5px;
+          .bg_yellow14 {
+            width: 100%;
+            height: 100%;
+            path {
+              animation-name: yell2red;
+              animation-duration: 3s;
+              animation-iteration-count: infinite;
+            }
+            @keyframes yell2red {
+              0% {
+                fill: rgb(248, 205, 69);
+              }
+              50% {
+                fill: red;
+              }
+              100% {
+                fill: rgb(248, 205, 69);
+              }
+            }
+          }
+          .stop14 {
+            top: 21px;
+            right: 11px;
+            position: absolute;
+            display: block;
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-14 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-15 ----------
+  #lesson7_15 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: 0;
+        margin-right: 0;
+        position: relative;
+        .green_btns7 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          margin-right: 36px;
+          margin-top: -49px;
+          .btn_green7_mini:not(:last-child) {
+            margin-bottom: 22px;
+            span {
+              animation-delay: 0s;
+              animation-name: text2big1;
+            }
+          }
+          .btn_green7_mini {
+            &:nth-child(2) {
+              background-image: url("../img/icons/bg_green_btn7_2.png");
+              span {
+                animation-delay: 0s;
+                animation-name: text2big2;
+              }
+            }
+          }
+          .btn_green7_mini {
+            &:nth-child(3) {
+              background-image: url("../img/icons/bg_green_btn7_3.png");
+              span {
+                animation-delay: 0s;
+                animation-name: text2big3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-15 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-16 ----------
+  #lesson7_16 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 282px;
+        }
+      }
+      .main_img {
+        margin-top: 0;
+        margin-right: 0;
+        position: relative;
+        .dog16 {
+          width: 160px;
+          display: block;
+          margin-right: 121px;
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-16 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-17 ----------
+  #lesson7_17 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        .dog17 {
+          width: 134px;
+          display: block;
+          margin-right: 126px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-17 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-18 ----------
+  #lesson7_18 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        .dog18 {
+          width: 134px;
+          display: block;
+          margin-right: 154px;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-18 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-19 ----------
+  #lesson7_19 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        .dog19 {
+          width: 134px;
+          display: block;
+          margin-right: 154px;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-19 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-20 ----------
+  #lesson7_20 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        .dog20 {
+          width: 116px;
+          display: block;
+          margin-right: 154px;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-20 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-21 ----------
+  #lesson7_21 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        .dog21 {
+          width: 198px;
+          display: block;
+          margin-right: 92px;
+          margin-top: 44px;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-21 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-22 ----------
+  #lesson7_22 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        .dog22 {
+          width: 108px;
+          display: block;
+          margin-right: 145px;
+          margin-top: 26px;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-22 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-23 ----------
+  #lesson7_23 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        .dog23 {
+          width: 108px;
+          display: block;
+          margin-right: 165px;
+          margin-top: 33px;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-23 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-24 ----------
+  #lesson7_24 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        .dog24 {
+          width: 114px;
+          display: block;
+          margin-right: 159px;
+          margin-top: 38px;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-24 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-25 ----------
+  #lesson7_25 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        position: relative;
+        .dog25 {
+          width: 147px;
+          display: block;
+          margin-right: 105px;
+          margin-top: -13px;
+        }
+        .stop_block {
+          position: absolute;
+          top: -9px;
+          right: 109px;
+          width: 72.5px;
+          .bg_yellow14 {
+            width: 100%;
+            height: 100%;
+            path {
+              animation-name: yell2red;
+              animation-duration: 3s;
+              animation-iteration-count: infinite;
+            }
+            @keyframes yell2red {
+              0% {
+                fill: rgb(248, 205, 69);
+              }
+              50% {
+                fill: red;
+              }
+              100% {
+                fill: rgb(248, 205, 69);
+              }
+            }
+          }
+          .stop14 {
+            top: 21px;
+            right: 11px;
+            position: absolute;
+            display: block;
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-25 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-26 ----------
+  #lesson7_26 {
+    .btn_green3 {
+      top: 173px;
+    }
+    .main_img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        display: block;
+        max-width: 84px;
+        width: 100%;
+        margin-top: 44px;
+        margin-left: 60px;
+      }
+    }
+  }
+  // ---------- END LESSON 7-26 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-27 ----------
+  #lesson7_27 {
+    // display: none;
+    h2 {
+      min-height: 100px;
+      margin-bottom: 12px;
+    }
+    .btn_left {
+      left: 79px;
+    }
+    .btn_right {
+      top: 236px;
+      left: 78px;
+    }
+    .main__content {
+      width: 100%;
+      padding-left: 140px;
+      padding-right: 17px;
+    }
+    .tning_and_food {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      // background-color: #ccc;
+      width: 100%;
+    }
+    .tning_and_food__items {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, 81px);
+        gap: 10px;
+        li {
+          height: 83px;
+          border-radius: 8.5px;
+          border: solid 1px #000;
+          overflow: hidden;
+        }
+      }
+    }
+    .tning_and_food__item {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px;
+      &:hover {
+        cursor: pointer;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        filter: grayscale(1);
+      }
+    }
+    .el27__red__active {
+      background-color: red;
+    }
+    .el27__green__active {
+      background-color: #6baa3c;
+      img {
+        filter: grayscale(0);
+      }
+    }
+    .tning_and_food__center {
+      max-width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      .center__img {
+        .cloud27 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 182px;
+          height: 78px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 10px;
+          &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url("../img/lesson7/27cloud.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center center;
+          }
+          .cloud27__texts {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            animation-name: cloud27__texts;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            font-size: 14px;
+          }
+          @keyframes cloud27__texts {
+            0% {
+              transform: scale(0.8);
+            }
+            50% {
+              transform: scale(1.1);
+            }
+            100% {
+              transform: scale(0.8);
+            }
+          }
+        }
+        .dog27 {
+          display: block;
+          margin-top: 100px;
+          width: 200px;
+        }
+      }
+
+      .progress_bar {
+        height: 24px;
+        border: solid 1px #000;
+        background-color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        .progress_bar__scale_green {
+          background-color: #6baa3c;
+          width: 0%;
+          height: 100%;
+          transition: 0.3s;
+          .progress_bar__text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-family: $CC;
+            font-size: 17px;
+            line-height: 1.2;
+            font-weight: 400;
+            letter-spacing: -0.68px;
+            text-align: center;
+            opacity: 0;
+            transition: 0.3s;
+          }
+          .progress_bar__text__active {
+            opacity: 1;
+          }
+        }
+        .w25 {
+          width: 25%;
+        }
+        .w50 {
+          width: 50%;
+        }
+        .w75 {
+          width: 75%;
+        }
+        .w100 {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // ---------- END LESSON 7-27 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-28 ----------
+  #lesson7_28 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        .woof {
+          position: relative;
+          width: 155px;
+          display: block;
+          margin-right: 120px;
+          margin-top: 52px;
+          .woof__img {
+            position: absolute;
+            left: -56px;
+            top: -5px;
+            width: 49px;
+            animation-name: woof__img;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes woof__img {
+            0% {
+              transform: scale(1);
+            }
+            25% {
+              transform: scale(1.5);
+            }
+            50% {
+              transform: scale(1);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-28 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-29 ----------
+  #lesson7_29 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        .dog29 {
+          display: block;
+          width: 206px;
+          margin-right: 91px;
+          margin-top: -48px;
+          svg {
+            width: 100%;
+            .bulb {
+              .fil5 {
+                fill: #fff;
+                animation-name: fil5;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+              }
+              .trans05 {
+                animation-delay: 0.5s;
+              }
+              .trans10 {
+                animation-delay: 1s;
+              }
+              .trans15 {
+                animation-delay: 1.5s;
+              }
+              .trans20 {
+                animation-delay: 2s;
+              }
+              .trans25 {
+                animation-delay: 2.5s;
+              }
+              .trans30 {
+                animation-delay: 3s;
+              }
+              @keyframes fil5 {
+                0% {
+                  fill: #fff;
+                }
+                25% {
+                  fill: #f8cd45;
+                }
+                50% {
+                  fill: #fff;
+                }
+                100% {
+                  fill: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-29 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-30 ----------
+  #lesson7_30 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        .dog30 {
+          width: 120px;
+          display: block;
+          margin-right: 129px;
+          margin-top: 46px;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-30 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-31 ----------
+  #lesson7_31 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        .velocity31 {
+          width: 163px;
+          height: 171px;
+          position: relative;
+          margin-right: 99px;
+          margin-top: -4px;
+          .dog31 {
+            width: 100%;
+            display: block;
+            position: relative;
+            z-index: 6;
+            animation-name: dog31;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes dog31 {
+            0% {
+              transform: translateY(0) rotate(0);
+            }
+            20% {
+              transform: translateY(-4px) rotate(1deg);
+            }
+            30% {
+              transform: translateY(0) rotate(0);
+            }
+            100% {
+              transform: translateY(0) rotate(0);
+            }
+          }
+          .ear1 {
+            display: block;
+            position: absolute;
+            width: 56px;
+            left: 0;
+            top: 8px;
+            z-index: 6;
+            animation-name: ear1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transform-origin: right;
+          }
+          @keyframes ear1 {
+            0% {
+              transform: rotate(-10deg);
+            }
+            10% {
+              transform: rotate(5deg);
+            }
+            30% {
+              transform: rotate(-10deg);
+            }
+            100% {
+              transform: rotate(-10deg);
+            }
+          }
+          .ear2 {
+            display: block;
+            position: absolute;
+            width: 49px;
+            left: 15px;
+            top: -1px;
+            animation-name: ear1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transform-origin: right;
+          }
+          .wheel_velo31_1 {
+            display: block;
+            width: 65px;
+            position: absolute;
+            bottom: 0;
+            left: 6px;
+            animation-name: wheel_velo31;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+          }
+          .wheel_velo31_2 {
+            display: block;
+            width: 65px;
+            position: absolute;
+            bottom: 0;
+            right: -1px;
+            animation-name: wheel_velo31;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+          }
+          @keyframes wheel_velo31 {
+            0% {
+              transform: rotate(0);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-31 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-32 ----------
+  #lesson7_32 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 280px;
+        }
+      }
+      .main_img {
+        margin-top: -49px;
+        margin-right: -8px;
+        .dog32 {
+          width: 412px;
+          display: block;
+          margin-top: 0;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-32 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-33 ----------
+  .pedestal {
+    width: 168px;
+    margin-top: 116px;
+    margin-right: 105px;
+    position: relative;
+    .pedestal__number {
+      color: $black;
+      font-family: $CC;
+      display: block;
+      font-size: 56px;
+      line-height: 0.8;
+      font-weight: 400;
+      letter-spacing: -0.68px;
+      text-align: center;
+      width: fit-content;
+      position: absolute;
+      top: -43px;
+      left: 50px;
+      animation-name: pedestal__number;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes pedestal__number {
+      0% {
+        transform: scaleY(1) translateY(0px);
+      }
+      5% {
+        transform: scaleY(0.8) translateY(0px);
+      }
+      10% {
+        transform: scaleY(1.2) translateY(-20px);
+      }
+      25% {
+        transform: scaleY(1) translateY(0px);
+      }
+      100% {
+        transform: scaleY(1) translateY(0px);
+      }
+    }
+  }
+  #lesson7_33 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 308px;
+        }
+      }
+      .main_img {
+        margin-top: -49px;
+        margin-right: -8px;
+      }
+    }
+  }
+  // ---------- END LESSON 7-33 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-34 ----------
+  #lesson7_34 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 308px;
+        }
+      }
+      .main_img {
+        margin-top: -49px;
+        margin-right: -8px;
+        .pedestal {
+          margin-top: 107px;
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-34 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-35 ----------
+  #lesson7_35 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 308px;
+        }
+      }
+      .main_img {
+        margin-top: -49px;
+        margin-right: -8px;
+        .pedestal {
+          margin-top: 98px;
+          .pedestal__number {
+            top: -48px;
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-35 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-36 ----------
+  #lesson7_36 {
+    .main__content {
+      .left__content {
+        .main__texts {
+          max-width: 308px;
+        }
+      }
+      .main_img {
+        margin-top: -49px;
+        margin-right: -8px;
+        .pedestal {
+          margin-top: 91px;
+          .pedestal__number {
+            top: -48px;
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-36 ----------
+  // ----------------------------------------
+  // ---------- LESSON 7-37 ----------
+  #lesson7_37 {
+    .btn_bottom {
+      top: 157px;
+      left: 78px;
+    }
+    .main__content {
+      min-height: 170px;
+      height: 100%;
+      .left__content {
+        max-height: 170px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .main__texts {
+          max-width: 308px;
+        }
+        .btn_green3_mini {
+          position: relative;
+          top: auto;
+          left: auto;
+          transform: none;
+          margin-top: 62px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          // span {
+          //   animation-name: text2big2;
+          // }
+        }
+      }
+      .main_img {
+        margin-top: 0;
+        margin-right: 0;
+        .child {
+          width: 287px;
+          height: 224px;
+          position: relative;
+          margin-right: 52px;
+          margin-top: -58px;
+          .el37 {
+            position: absolute;
+            display: block;
+          }
+          // --------------------
+          .left_top_el1 {
+            width: 25px;
+            left: 1px;
+            top: 30px;
+            animation-name: left_top_el;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom right;
+            animation-delay: 0;
+          }
+          .left_top_el2 {
+            width: 18px;
+            left: 26px;
+            top: 18px;
+            animation-name: left_top_el;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom right;
+            animation-delay: 0.5s;
+          }
+          .left_top_el3 {
+            width: 9px;
+            left: 55px;
+            top: 9px;
+            animation-name: left_top_el;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom right;
+            animation-delay: 1s;
+          }
+          @keyframes left_top_el {
+            0% {
+              transform: scale(0.2) translate(0, 0);
+              opacity: 1;
+            }
+            25% {
+              transform: scale(1.2) translate(-5px, 5px);
+            }
+            100% {
+              transform: scale(1.4) translate(-5px, 5px);
+              opacity: 0;
+            }
+          }
+          // --------------------
+          .right_top_el1 {
+            width: 17px;
+            right: 56px;
+            top: -4px;
+            animation-name: right_top_el;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom left;
+            animation-delay: 0;
+          }
+          .right_top_el2 {
+            width: 34px;
+            right: 22px;
+            top: -5px;
+            animation-name: right_top_el;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom left;
+            animation-delay: 0.3s;
+          }
+          .right_top_el3 {
+            width: 30px;
+            right: 10px;
+            top: 19px;
+            animation-name: right_top_el;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom left;
+            animation-delay: 0.6s;
+          }
+          .right_top_el4 {
+            width: 30px;
+            right: -6px;
+            top: 36px;
+            animation-name: right_top_el;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom left;
+            animation-delay: 1s;
+          }
+          @keyframes right_top_el {
+            0% {
+              transform: scale(0.2) translate(0, 0);
+              opacity: 1;
+            }
+            25% {
+              transform: scale(1.2) translate(-5px, 5px);
+            }
+            100% {
+              transform: scale(1.4) translate(-5px, 5px);
+              opacity: 0;
+            }
+          }
+          // --------------------
+          .left_bottom_el1 {
+            width: 10px;
+            left: -1px;
+            bottom: 43px;
+            animation-name: left_bottom_el;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0;
+          }
+          .left_bottom_el2 {
+            width: 5px;
+            left: 11px;
+            bottom: 40px;
+            animation-name: left_bottom_el;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.3s;
+          }
+          @keyframes left_bottom_el {
+            0% {
+              transform: scale(0.2) translate(0, 0) rotate(0);
+              opacity: 1;
+            }
+            25% {
+              transform: scale(1.2) translate(-5px, 5px) rotate(360deg);
+            }
+            100% {
+              transform: scale(1.4) translate(-5px, 5px) rotate(360deg);
+              opacity: 0;
+            }
+          }
+          // --------------------
+          .right_bottom_el1 {
+            width: 11px;
+            right: 28px;
+            bottom: 43px;
+            animation-name: right_bottom_el;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0;
+          }
+          .right_bottom_el2 {
+            width: 8px;
+            right: 17px;
+            bottom: 47px;
+            animation-name: right_bottom_el;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.3s;
+          }
+          .right_bottom_el3 {
+            width: 20px;
+            right: 1px;
+            bottom: 40px;
+            animation-name: right_bottom_el;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.6s;
+          }
+          @keyframes right_bottom_el {
+            0% {
+              transform: scale(0.2) translate(0, 0) rotate(0);
+              opacity: 1;
+            }
+            25% {
+              transform: scale(1.2) translate(-5px, 5px) rotate(-360deg);
+            }
+            100% {
+              transform: scale(1.4) translate(-5px, 5px) rotate(-360deg);
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  // ---------- END LESSON 7-37 ----------
+  // ----------------------------------------
+
+  // ----------------------------------------
+}
+// ---------- END BLOCK LESSON 7 ----------
+// ----------------------------------------
+// ========================================

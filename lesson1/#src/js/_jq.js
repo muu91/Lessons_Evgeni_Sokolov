@@ -20,7 +20,7 @@ $(document).ready(function () {
             }
         });
     });
-    $('#lesson1_12 .swiper-button-next').click(function () {
+    $('#lesson1_12 .swiper-button-next, #lesson1_12 .swiper-button-prev').click(function () {
         $('.btn_right12').show();
         let blue_blocks__item = $('[data-anim=blue_blocks__item]').length;
         if (blue_blocks__item > 1) {
@@ -41,7 +41,7 @@ $(document).ready(function () {
             }
         });
     });
-    $('#lesson1_18 .swiper-button-next').click(function () {
+    $('#lesson1_18 .swiper-button-next, #lesson1_18 .swiper-button-prev').click(function () {
         $('.btn_right18').show();
         let blue_blocks__item = $('[data-anim18=blue_blocks__item]').length;
         if (blue_blocks__item > 1) {
@@ -62,7 +62,7 @@ $(document).ready(function () {
             }
         });
     });
-    $('#lesson1_23 .swiper-button-next').click(function () {
+    $('#lesson1_23 .swiper-button-next, #lesson1_23 .swiper-button-prev').click(function () {
         $('.btn_right23').show();
         let blue_blocks__item = $('[data-anim23=blue_blocks__item]').length;
         if (blue_blocks__item > 1) {
@@ -83,7 +83,7 @@ $(document).ready(function () {
             }
         });
     });
-    $('#lesson1_32 .swiper-button-next').click(function () {
+    $('#lesson1_32 .swiper-button-next, #lesson1_32 .swiper-button-prev').click(function () {
         $('.btn_right32').show();
         let blue_blocks__item = $('[data-anim32=blue_blocks__item]').length;
         if (blue_blocks__item > 0) {
@@ -271,10 +271,32 @@ $(document).ready(function () {
     //         });
     //     }, 1000);
     // })
+    // ----------------------------------------
+    // ----- BTNS RIGHT -----
+    setTimeout(function () {
+        $('.swiper-slide-active').find('.btn_right').css({ 'pointer-events': 'all', 'background-color': '#6baa3c' });
+    }, 2000);
+    // if ($('.swiper-slide').hasClass('swiper-slide-active')) {
+    // }
+
+
+
+    // $('.swiper-button-next, .swiper-button-prev, .conversion__center ').click(function () {
+    //     $('.swiper-slide').find('.btn_right').css({ 'pointer-events': 'none', 'background-color': '#e1dfda' });
+    //     $('.swiper-slide').each(function () {
+    //         setTimeout(function () {
+    //             $('.swiper-slide-active').find('.btn_right').css({ 'pointer-events': 'all', 'background-color': '#6baa3c' });
+    //         }, 2000);
+    //     })
+
+    //     if ($('#lesson1_32').hasClass('swiper-slide-active')) {
+    //         setTimeout(function () {
+    //             $('.swiper-slide-active').find('.btn_right').css({ 'pointer-events': 'all', 'background-color': '#6baa3c' });
+    //         }, 2000);
+    //     }
+    // });
+    // ----- END BTNS RIGHT -----
+    // ----------------------------------------
     // ---------- END OTHER ----------
     // ========================================
-
-
-
-
 });
